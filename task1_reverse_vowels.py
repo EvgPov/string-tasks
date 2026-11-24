@@ -13,6 +13,7 @@ def reverse_vowels(line: str) -> str:
             result += line[index]
     return result
 
+
 if __name__ == "__main__":
     text = input("Введите строку: ")
     print(f"Результат: {reverse_vowels(text)}")
