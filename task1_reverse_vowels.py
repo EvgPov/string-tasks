@@ -1,5 +1,5 @@
 def reverse_vowels(line: str) -> str:
-    vowels = "aeiouyAEIOUY"
+    vowels = "aeiouAEIOU"
     result = ""
     vowels_list = []
     for char in line:
@@ -13,5 +13,6 @@ def reverse_vowels(line: str) -> str:
             result += line[index]
     return result
 
-text = input("Введите строку: ")
-print(reverse_vowels(text))
+if __name__ == "__main__":
+    text = input("Введите строку: ")
+    print(f"Результат: {reverse_vowels(text)}")
