@@ -1,5 +1,7 @@
+PUNCTUATION = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
+
+
 def last_word_length(line: str) -> int:
-    PUNCTUATION = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
     words = line.split()
     return len(words[-1].strip(PUNCTUATION)) if words else 0
 
